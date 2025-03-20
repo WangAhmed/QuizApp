@@ -1,0 +1,112 @@
+/* Futuristic Background */
+body {
+    background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    text-align: center;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Main Quiz Container */
+.quiz-container {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+    width: 400px;
+    backdrop-filter: blur(10px);
+}
+
+/* Timer Animation */
+.timer-container {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+
+svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+}
+
+circle {
+    fill: none;
+    stroke: #333;
+    stroke-width: 10;
+    stroke-dasharray: 283;
+    stroke-dashoffset: 0;
+    stroke-linecap: round;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+}
+
+#progress {
+    stroke: #00f5d4;
+    stroke-dashoffset: 283;
+    transition: stroke-dashoffset 1s linear;
+}
+
+#timer {
+    font-size: 24px;
+    font-weight: bold;
+    position: absolute;
+    top: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Question Styling */
+#question-container {
+    margin: 20px 0;
+}
+
+button {
+    background: linear-gradient(45deg, #00f5d4, #00bbf9);
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #f72585, #7209b7);
+}
+
+p {
+    font-size: 20px;
+    margin: 10px 0;
+    text-align: center;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: #00f5d4;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: white;
+}
+
+
+
+/* Hide Elements */
+.hidden {
+    display: none;
+}

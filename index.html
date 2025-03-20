@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futuristic Quiz App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="quiz-container">
+        <h1>🚀DSL Task # 15  Futuristic Quiz App</h1>
+        
+        <!-- Timer Section -->
+        <div class="timer-container">
+            <svg>
+                <circle cx="50" cy="50" r="45"></circle>
+                <circle cx="50" cy="50" r="45" id="progress"></circle>
+            </svg>
+            <span id="timer">60</span>
+        </div>
+
+        <!-- Question and Answer Section -->
+        <div id="question-container">
+            <h2 id="question">Loading...</h2>
+            <div id="answer-buttons"></div>
+        </div>
+
+        <!-- Question Index -->
+        <div id="question-index">
+            <p id="question-number">Question 1 of 10</p>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="controls">
+            <button id="prev-btn" style="display:none;">⏮ Previous</button>
+            <button id="next-btn">Next ⏭</button>
+        </div>
+
+        <!-- Progress Container for Results -->
+        <div id="progress-container" class="hidden">
+            <h2>Level Completed!</h2>
+            <p id="score-display">Your Score: 0/10</p>
+            <p>Grade: <span id="grade">F</span></p>
+            <p>Assignment 1 Score: 0</p>
+            <p>Assignment 2 Score: 0</p>
+            <p>Assignment 3 Score: 0</p>
+            <p><strong>Grand Total: 0/30</strong></p> <!-- Grand total -->
+        </div>
+
+        <!-- Restart Button -->
+        <button id="restart-btn" style="display:none;">Restart 🔄</button>
+
+        <footer>
+            <p>Created with ❤️ by <a href="https://www.linkedin.com/in/zeeshan-abdul-ghani-shareef-a5b860274/" target="_blank">Zeeshan Ahmed</a></p>
+            <p>StudentID || 1418296</p>
+            <p>BatchCode || SBTE-202412C</p>
+            <p>Faculty || Miss Khaula Hussain</p>
+            
+        </footer>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
